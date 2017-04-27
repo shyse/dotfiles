@@ -3,6 +3,7 @@ alias ls="ls -GF"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias history='history 1'
 
 setopt share_history
 setopt hist_ignore_all_dups
