@@ -4,8 +4,15 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-HISTSIZE=100000
-SAVEHIST=100000
+function share_history {
+    history -a
+    history -c
+    history -r
+}
+PROMPT_COMMAND='share_history'
+shopt -u histappend
+export HISTSIZE=100000
 
 export LANG=ja_JP.UTF-8
+
 nodebrew use latest 
