@@ -1,5 +1,5 @@
-alias ll="ls -lGF"
-alias ls="ls -GF"
+alias ll="ls -lF --color"
+alias ls="ls -F --color"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -23,4 +23,11 @@ SAVEHIST=100000
 PROMPT='[%n%#%m %c] '
 
 export LANG=ja_JP.UTF-8
+
+# node
+if [ -f $HOME/.nodebrew/current/bin/nodebrew ];
+  then
+    export PATH=$HOME/.nodebrew/current/bin:$PATH
+    nodebrew use latest
+fi
 
