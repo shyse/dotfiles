@@ -13,3 +13,4 @@ set smartindent
 set smarttab
 set tabstop=4
 set whichwrap=b,s,h,l,<,>,[,]
+set backspace=indent,eol,start
