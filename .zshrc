@@ -34,7 +34,7 @@ PROMPT='[%n%#%m %c] '
 export LANG=ja_JP.UTF-8
 
 # node
-if [ nodebrew >/dev/null 2>&1 ];
+if [ -e ${HOME}/.nodebrew ];
   then
     export PATH=${HOME}/.nodebrew/current/bin:${PATH}
     nodebrew use latest
