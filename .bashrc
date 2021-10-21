@@ -4,19 +4,19 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # aliases
-case "${OSTYPE}" in$ 
+case "${OSTYPE}" in
 darwin*)
   alias ls="ls -G"
   alias ll="ls -laG"
-  ;;$ 
+  ;;
 linux*)
   alias ls='ls --color'
   alias ll='ls -la --color'
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'
-  ;;$ 
-esac$
+  ;; 
+esac
 
 # history
 function share_history {
